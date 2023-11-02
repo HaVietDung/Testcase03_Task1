@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity Template</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="59440c164629c60277a968626d1bb309063fbc35d3362d668f4f2d8b2d538328.html">Practice</a></span>
+                > <span class="truncate-60"><a
+                    href="5c1dab716b98fa5d5bc6b90eef1d61d40120151f1d0da0aab41bd4f90bc71854.html">Check Infomation LG </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 02-11-2023 18:02</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Practice </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="c09c7ed90d395b86602cd9419cf6c80a6fa1df09a621e3c8d921e3444d518c6a.html">Testcase3 Vn
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Check Infomation LG
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Auto open url &lt;url&gt;<br>When Add product "&lt;product&gt;" To Cart And Go To Cart<br>When Get Infomation In Cart<br>When Enter Information In Check Out Page<br>When Get Infomation In CheckOut<br>Then Compare Price And Qty<br>When Select Payment Method</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" 1: Check Infomation LG ({url=https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index, product=MD05849136})" width="1920"/>
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Auto opens the https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
+                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
+                <img src="d3fd81d786877233956226b5d17028cf56dcb4450ebc939156cdb482b8b680be.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart" width="1920"/>
+                <img src="d3fd81d786877233956226b5d17028cf56dcb4450ebc939156cdb482b8b680be.png" title=" Auto enters 'MD05849136' into Product_ID_Input" width="1920"/>
+                <img src="8c712b78a660e0008cb5bc0993bd6d1ff84aa03fe53228652a4e9ca81e52a1b7.png" title=" Auto clicks on Add_To_Cart_Btn" width="1920"/>
+                <img src="4cb8d839f4b718517f60ab30f4eacb1a0420df11b2f49653217284f918495f26.png" title=" Auto clicks on Go_To_Cart_Btn" width="1920"/>
+                <img src="4cb8d839f4b718517f60ab30f4eacb1a0420df11b2f49653217284f918495f26.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart (completed)" width="1920"/>
+                <img src="41538f656610399c6a21b409de8f3f8527e9dc35f045c3c21f7069dc2ea47fe4.png" title=" When Get Infomation In Cart" width="1920"/>
+                <img src="41538f656610399c6a21b409de8f3f8527e9dc35f045c3c21f7069dc2ea47fe4.png" title=" Auto should see NameProductInCart that is displayed" width="1920"/>
+                <img src="e5c73402a244046bdaaa2b830ecbc2f797e2176ece16abbbcb991b96f63e86c8.png" title=" Auto should see PricePriductInCart that is displayed" width="1920"/>
+                <img src="48549d7cbc94855b720b2ec8d72b7ca98fa0a45a87fe82eb5043410474486abd.png" title=" Auto selects #value in Select_Qty_Product" width="1920"/>
+                <img src="61e4ae96abcd92c1c8847ed469c2976152cb108cafa475a489067c6e22a423c8.png" title=" Auto clicks on ThanhToanBtn" width="1920"/>
+                <img src="61e4ae96abcd92c1c8847ed469c2976152cb108cafa475a489067c6e22a423c8.png" title=" When Get Infomation In Cart (completed)" width="1920"/>
+                <img src="18111ee844a7e6a08af58eb3bc0fc9c2b4cf27301e6a3446c260221c0e2bae89.png" title=" When Enter Information In Check Out Page" width="1920"/>
+                <img src="18111ee844a7e6a08af58eb3bc0fc9c2b4cf27301e6a3446c260221c0e2bae89.png" title=" Auto enters 'havietdung10@gmail.com' into EmailInput" width="1920"/>
+                <img src="59a235b0b7552826e7cf574004976aebb6d1692e2a63e0f7e9a08c3e9eeee850.png" title=" Auto enters 'dung' into FirstInput" width="1920"/>
+                <img src="4fbeabc2acc21ffd6c6c66602f85655967d3d59ac15d5864b4ca20bcd0029a7f.png" title=" Auto enters 'ha' into LastName" width="1920"/>
+                <img src="da30bdb63f945aea62fc8d4b1c10be0e154916067c643a4d687c5a75b45a1bd1.png" title=" Auto enters '236 khuong dinh' into AddressInput" width="1920"/>
+                <img src="434dd6fbac8b7889c82d26732f46c8c6235eb6d66d8778b15d24c2a184261257.png" title=" Auto selects #value in ProvinceInput" width="1920"/>
+                <img src="ae566365db11500b764820cda7f7eb44024ca63a1e3b779adaf5a82f8526a130.png" title=" Auto selects #value in DistrictInput" width="1920"/>
+                <img src="e2952b202b34da120844e6501c42005e2a0984da414b81daafe66650078c43c8.png" title=" Auto enters '0835678910' into PhoneNumberInput" width="1920"/>
+                <img src="91a85ed0a0a5b96f59c59e969beb39d3bb865b67f9a83b65baf988df41706ec3.png" title=" Auto clicks on ContinueButton" width="1920"/>
+                <img src="91a85ed0a0a5b96f59c59e969beb39d3bb865b67f9a83b65baf988df41706ec3.png" title=" When Enter Information In Check Out Page (completed)" width="1920"/>
+                <img src="f0262734e5f1bdec23f3ca6e4701c49f19ece577655a6cf931c12fb0fd4921c8.png" title=" When Get Infomation In CheckOut" width="1920"/>
+                <img src="f0262734e5f1bdec23f3ca6e4701c49f19ece577655a6cf931c12fb0fd4921c8.png" title=" Auto should see PriceInCheckOutPage that is displayed" width="1920"/>
+                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" Auto should see QtyInCheckOutPage that is displayed" width="1920"/>
+                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" When Get Infomation In CheckOut (completed)" width="1920"/>
+                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" Then Compare Price And Qty" width="1920"/>
+                <img src="740278339dab52599d8452ffa4da24377791e4def00f58b55b51b8e9b9e6faba.png" title=" When Select Payment Method" width="1920"/>
+                <img src="740278339dab52599d8452ffa4da24377791e4def00f58b55b51b8e9b9e6faba.png" title=" Auto clicks on PaymanetMethod" width="1920"/>
+                <img src="3ed66bd7cae6e09dacd614ecb3255a975d5990d121e80967dfceb1d73d13ea1b.png" title=" Auto clicks on Confirm1" width="1920"/>
+                <img src="6f378dfd02e6d1daebee1c3b176bfe8e8e75f8c2fbfd1d7aa8f3f7ccf486d1d4.png" title=" Auto clicks on Confirm2" width="1920"/>
+                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" Auto clicks on ButtonContinue2" width="1920"/>
+                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" When Select Payment Method (completed)" width="1920"/>
+                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" 1: Check Infomation LG ({url=https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index, product=MD05849136}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.0</span>
+</div>
+</body>
+</html>
