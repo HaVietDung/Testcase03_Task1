@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         plugin = "pretty",
         features = "src/test/resources/features/testcase3",
         glue = {"smartosc.hook", "smartosc.page"},
-        tags = "@testcase3_vn"
+        tags = ""
+//        tags = "@testcase3_vn"
 //        tags = "@testcase3_cac_en"
 )
 

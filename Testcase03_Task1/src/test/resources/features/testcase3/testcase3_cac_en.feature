@@ -5,11 +5,11 @@ Feature: practice
     Given Auto open url <url>
     When Add product "<product>" To Cart And Go To Cart
     When Get Infomation In Cart
-    When Enter Information In Check Out Page
-    When Get Infomation In CheckOut
+    When Enter Information In Check Out Page "<country>"
+    When Get Infomation In" CheckOut
     Then Compare Price And Qty
     When Select Payment Method
 
     Examples:
-      | url                                                             | product    |
-      | https://wwwstg.lg.com/cac_en/shop/addtocartsimulator/page/index | MD00215290 |
+      | url                                                             | product    | country |
+      | https://wwwstg.lg.com/cac_en/shop/addtocartsimulator/page/index | MD00215290 | cac_en  |

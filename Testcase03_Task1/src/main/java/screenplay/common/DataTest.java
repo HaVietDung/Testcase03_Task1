@@ -10,4 +10,5 @@ public class DataTest {
     public static final String PROVINCE = "676";
     public static final String DISTRICT = "2";
     public static final String PHONE  = "0835678910";
+    public static final String PHONE_PNAMA = "02345678";
 }

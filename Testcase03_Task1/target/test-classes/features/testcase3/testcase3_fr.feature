@@ -13,3 +13,4 @@ Feature: practice
     Examples:
       | url                                                         | product |
       | https://wwwstg.lg.com/fr/shop/addtocartsimulator/page/index | 123     |
+

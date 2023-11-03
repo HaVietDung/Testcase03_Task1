@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: smartosc.cucumber.Testcase3TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.471 s - in smartosc.cucumber.Testcase3TestSuite

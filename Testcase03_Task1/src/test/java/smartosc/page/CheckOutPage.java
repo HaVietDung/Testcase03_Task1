@@ -4,16 +4,20 @@ import com.beust.ah.A;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.core.Serenity;
+import net.serenitybdd.screenplay.actions.Switch;
 import net.thucydides.core.annotations.Steps;
 import screenplay.actions.ActionCommon;
 import screenplay.common.DataTest;
 import screenplay.user_interface.CheckOutComponent;
+import screenplay.user_interface.CheckOut_cac_en;
 
 public class CheckOutPage {
     @Steps
     ActionCommon action;
-    @When("Enter Information In Check Out Page")
-    public void enterInformation(){
+
+    @When("Enter Information In Check Out Page {string}")
+    public void enterInformation() {
+
         action.typeText(CheckOutComponent.EMAII_INPUT, DataTest.EMAIL);
         action.typeText(CheckOutComponent.FIRST_NAME_INPUT, DataTest.FIRST_NAME);
         action.typeText(CheckOutComponent.LAST_NAME_INPUT, DataTest.LAST_NAME);
@@ -24,33 +28,62 @@ public class CheckOutPage {
         action.typeText(CheckOutComponent.PHONE_INPUT, DataTest.PHONE);
         ActionCommon.pause(5000);
         action.clickElement(CheckOutComponent.CONTINUE_BUTTON);
+
+//        switch (country){
+//            case "vn": {
+//                action.typeText(CheckOutComponent.EMAII_INPUT, DataTest.EMAIL);
+//                action.typeText(CheckOutComponent.FIRST_NAME_INPUT, DataTest.FIRST_NAME);
+//                action.typeText(CheckOutComponent.LAST_NAME_INPUT, DataTest.LAST_NAME);
+//                action.typeText(CheckOutComponent.ADDRESS_INPUT, DataTest.ADDRESS);
+//                ActionCommon.pause(5000);
+//                action.selectDropdown(CheckOutComponent.PROVINCE_INPUT, DataTest.PROVINCE);
+//                action.selectDropdown(CheckOutComponent.DISTRICT_INPUT, DataTest.DISTRICT);
+//                action.typeText(CheckOutComponent.PHONE_INPUT, DataTest.PHONE);
+//                ActionCommon.pause(5000);
+//                action.clickElement(CheckOutComponent.CONTINUE_BUTTON);
+//            }
+//            case "cac_en": {
+//                action.typeText(CheckOutComponent.EMAII_INPUT, DataTest.EMAIL);
+//                action.typeText(CheckOut_cac_en.ABC, "123");
+//                action.typeText(CheckOutComponent.FIRST_NAME_INPUT, DataTest.FIRST_NAME);
+//                action.typeText(CheckOutComponent.LAST_NAME_INPUT, DataTest.LAST_NAME);
+//                action.typeText(CheckOutComponent.ADDRESS_INPUT, DataTest.ADDRESS);
+//                ActionCommon.pause(5000);
+//            }
+        }
+
+
     }
+
     @When("Get Infomation In CheckOut")
-    public void getInfomationCheckOut(){
+
+    public void getInfomationCheckOut() {
+
         String priceCheckOut = action.getText(CheckOutComponent.PRICE_IN_CHECK_OUT);
         Serenity.setSessionVariable("priceCheckOut").to(priceCheckOut);
         String qtyCheckOut = action.getText(CheckOutComponent.QTY_IN_CHECK_OUT);
         Serenity.setSessionVariable("qtyCheckOut").to(qtyCheckOut);
     }
+
     @Then("Compare Price And Qty")
-    public void comaprePriceAndQty(){
+    public void comaprePriceAndQty() {
         String qtyCart = Serenity.sessionVariableCalled("qtyCart");
         String priceCart = Serenity.sessionVariableCalled("priceCart");
         String qtyCheckOut = Serenity.sessionVariableCalled("qtyCheckOut");
         String priceCheckOut = Serenity.sessionVariableCalled("priceCheckOut");
-        System.out.println("qty1"+qtyCart);
-        System.out.println("p1"+priceCart);
-        System.out.println("q2"+qtyCheckOut);
-        System.out.println("p2"+priceCheckOut);
+        System.out.println("qty1" + qtyCart);
+        System.out.println("p1" + priceCart);
+        System.out.println("q2" + qtyCheckOut);
+        System.out.println("p2" + priceCheckOut);
 //        check price
-        if(priceCheckOut.equals(priceCart)){
+        if (priceCheckOut.equals(priceCart)) {
             System.out.println("Price is true");
         } else {
             System.out.println("Price is false");
         }
 
 //        check qty
-        if(qtyCheckOut.equals(qtyCart)){
+        if (qtyCheckOut.equals(qtyCart)) {
             System.out.println("Qty is true");
         } else {
             System.out.println("Qty is false");

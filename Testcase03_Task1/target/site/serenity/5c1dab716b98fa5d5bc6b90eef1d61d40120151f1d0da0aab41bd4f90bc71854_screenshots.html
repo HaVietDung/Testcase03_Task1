@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 02-11-2023 18:02</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 03-11-2023 17:36</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Check Infomation LG
+                                <span class="failing-color">Check Infomation LG
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -213,52 +213,76 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given Auto open url &lt;url&gt;<br>When Add product "&lt;product&gt;" To Cart And Go To Cart<br>When Get Infomation In Cart<br>When Enter Information In Check Out Page<br>When Get Infomation In CheckOut<br>Then Compare Price And Qty<br>When Select Payment Method</div>
+        <div class="scenario">Given Auto open url &lt;url&gt;<br>When Add product "&lt;product&gt;" To Cart And Go To Cart<br>When Get Infomation In Cart<br>When Enter Information In Check Out Page "&lt;country&gt;"<br>When Get Infomation In CheckOut<br>Then Compare Price And Qty<br>When Select Payment Method</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by not so</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>screenplay.actions.ActionCommon.typeText(ActionCommon.java:34)<br />smartosc.page.CheckOutPage.enterInformation(CheckOutPage.java:35)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" 1: Check Infomation LG ({url=https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index, product=MD05849136})" width="1920"/>
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Auto opens the https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
-                <img src="55fc347f84581f569a40f422198981cc49490fc97006a90a88c1b7e6d793a409.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
-                <img src="d3fd81d786877233956226b5d17028cf56dcb4450ebc939156cdb482b8b680be.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart" width="1920"/>
-                <img src="d3fd81d786877233956226b5d17028cf56dcb4450ebc939156cdb482b8b680be.png" title=" Auto enters 'MD05849136' into Product_ID_Input" width="1920"/>
-                <img src="8c712b78a660e0008cb5bc0993bd6d1ff84aa03fe53228652a4e9ca81e52a1b7.png" title=" Auto clicks on Add_To_Cart_Btn" width="1920"/>
-                <img src="4cb8d839f4b718517f60ab30f4eacb1a0420df11b2f49653217284f918495f26.png" title=" Auto clicks on Go_To_Cart_Btn" width="1920"/>
-                <img src="4cb8d839f4b718517f60ab30f4eacb1a0420df11b2f49653217284f918495f26.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart (completed)" width="1920"/>
-                <img src="41538f656610399c6a21b409de8f3f8527e9dc35f045c3c21f7069dc2ea47fe4.png" title=" When Get Infomation In Cart" width="1920"/>
-                <img src="41538f656610399c6a21b409de8f3f8527e9dc35f045c3c21f7069dc2ea47fe4.png" title=" Auto should see NameProductInCart that is displayed" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" 1: Check Infomation LG ({url=https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index, product=MD05849136, country=vn})" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Auto opens the https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Given Auto open url https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index (completed)" width="1920"/>
+                <img src="c452bb5dbbabc13aa17b5e6f00bbed921f0ad935519df3a5e5a6baa3a993defc.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart" width="1920"/>
+                <img src="c452bb5dbbabc13aa17b5e6f00bbed921f0ad935519df3a5e5a6baa3a993defc.png" title=" Auto enters 'MD05849136' into Product_ID_Input" width="1920"/>
+                <img src="fc11e05b495e47d30d777961375f2ad3eeea56481af6708d0f9392293e4befae.png" title=" Auto clicks on Add_To_Cart_Btn" width="1920"/>
+                <img src="34ba5dbba69f09960b80407586999e704aca392bbbce8e33e8ace06e8566ae55.png" title=" Auto clicks on Go_To_Cart_Btn" width="1920"/>
+                <img src="34ba5dbba69f09960b80407586999e704aca392bbbce8e33e8ace06e8566ae55.png" title=" When Add product &quot;MD05849136&quot; To Cart And Go To Cart (completed)" width="1920"/>
+                <img src="c648c132b222e735eea9ca0b0e0b1fc21f8ff325bd30f9b75809785f76572734.png" title=" When Get Infomation In Cart" width="1920"/>
+                <img src="c648c132b222e735eea9ca0b0e0b1fc21f8ff325bd30f9b75809785f76572734.png" title=" Auto should see NameProductInCart that is displayed" width="1920"/>
                 <img src="e5c73402a244046bdaaa2b830ecbc2f797e2176ece16abbbcb991b96f63e86c8.png" title=" Auto should see PricePriductInCart that is displayed" width="1920"/>
-                <img src="48549d7cbc94855b720b2ec8d72b7ca98fa0a45a87fe82eb5043410474486abd.png" title=" Auto selects #value in Select_Qty_Product" width="1920"/>
-                <img src="61e4ae96abcd92c1c8847ed469c2976152cb108cafa475a489067c6e22a423c8.png" title=" Auto clicks on ThanhToanBtn" width="1920"/>
-                <img src="61e4ae96abcd92c1c8847ed469c2976152cb108cafa475a489067c6e22a423c8.png" title=" When Get Infomation In Cart (completed)" width="1920"/>
-                <img src="18111ee844a7e6a08af58eb3bc0fc9c2b4cf27301e6a3446c260221c0e2bae89.png" title=" When Enter Information In Check Out Page" width="1920"/>
-                <img src="18111ee844a7e6a08af58eb3bc0fc9c2b4cf27301e6a3446c260221c0e2bae89.png" title=" Auto enters 'havietdung10@gmail.com' into EmailInput" width="1920"/>
-                <img src="59a235b0b7552826e7cf574004976aebb6d1692e2a63e0f7e9a08c3e9eeee850.png" title=" Auto enters 'dung' into FirstInput" width="1920"/>
-                <img src="4fbeabc2acc21ffd6c6c66602f85655967d3d59ac15d5864b4ca20bcd0029a7f.png" title=" Auto enters 'ha' into LastName" width="1920"/>
-                <img src="da30bdb63f945aea62fc8d4b1c10be0e154916067c643a4d687c5a75b45a1bd1.png" title=" Auto enters '236 khuong dinh' into AddressInput" width="1920"/>
-                <img src="434dd6fbac8b7889c82d26732f46c8c6235eb6d66d8778b15d24c2a184261257.png" title=" Auto selects #value in ProvinceInput" width="1920"/>
-                <img src="ae566365db11500b764820cda7f7eb44024ca63a1e3b779adaf5a82f8526a130.png" title=" Auto selects #value in DistrictInput" width="1920"/>
-                <img src="e2952b202b34da120844e6501c42005e2a0984da414b81daafe66650078c43c8.png" title=" Auto enters '0835678910' into PhoneNumberInput" width="1920"/>
-                <img src="91a85ed0a0a5b96f59c59e969beb39d3bb865b67f9a83b65baf988df41706ec3.png" title=" Auto clicks on ContinueButton" width="1920"/>
-                <img src="91a85ed0a0a5b96f59c59e969beb39d3bb865b67f9a83b65baf988df41706ec3.png" title=" When Enter Information In Check Out Page (completed)" width="1920"/>
-                <img src="f0262734e5f1bdec23f3ca6e4701c49f19ece577655a6cf931c12fb0fd4921c8.png" title=" When Get Infomation In CheckOut" width="1920"/>
-                <img src="f0262734e5f1bdec23f3ca6e4701c49f19ece577655a6cf931c12fb0fd4921c8.png" title=" Auto should see PriceInCheckOutPage that is displayed" width="1920"/>
-                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" Auto should see QtyInCheckOutPage that is displayed" width="1920"/>
-                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" When Get Infomation In CheckOut (completed)" width="1920"/>
-                <img src="05c58a2c2c81445453f1a82c6cbe7f2d9e65ff9fead411affb371dcf7b056d3a.png" title=" Then Compare Price And Qty" width="1920"/>
-                <img src="740278339dab52599d8452ffa4da24377791e4def00f58b55b51b8e9b9e6faba.png" title=" When Select Payment Method" width="1920"/>
-                <img src="740278339dab52599d8452ffa4da24377791e4def00f58b55b51b8e9b9e6faba.png" title=" Auto clicks on PaymanetMethod" width="1920"/>
-                <img src="3ed66bd7cae6e09dacd614ecb3255a975d5990d121e80967dfceb1d73d13ea1b.png" title=" Auto clicks on Confirm1" width="1920"/>
-                <img src="6f378dfd02e6d1daebee1c3b176bfe8e8e75f8c2fbfd1d7aa8f3f7ccf486d1d4.png" title=" Auto clicks on Confirm2" width="1920"/>
-                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" Auto clicks on ButtonContinue2" width="1920"/>
-                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" When Select Payment Method (completed)" width="1920"/>
-                <img src="cfa30cf586364dea6558b33fbf7b316d7461906b1941100527bea61946997f30.png" title=" 1: Check Infomation LG ({url=https://wwwstg.lg.com/vn/shop/addtocartsimulator/page/index, product=MD05849136}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="0a029f6914fdf79a8968382c106be2966f6ce3721314cb81bd2f5cc083bd9ebe.png" title=" Auto selects #value in Select_Qty_Product" width="1920"/>
+                <img src="87e07c3c41520d501f79ce2f52b25246f1f0785ebd78fa5b9f080c5a8f6c8bc8.png" title=" Auto clicks on ThanhToanBtn" width="1920"/>
+                <img src="87e07c3c41520d501f79ce2f52b25246f1f0785ebd78fa5b9f080c5a8f6c8bc8.png" title=" When Get Infomation In Cart (completed)" width="1920"/>
+                <img src="729c53fd0df3326a0a89d1316c9dffdd0da80b6427c7699fdedb60845679f2cc.png" title=" When Enter Information In Check Out Page &quot;vn&quot;" width="1920"/>
+                <img src="729c53fd0df3326a0a89d1316c9dffdd0da80b6427c7699fdedb60845679f2cc.png" title=" Auto enters 'havietdung10@gmail.com' into EmailInput" width="1920"/>
+                <img src="36f32a85f406e340a0038af98d03d577f39c4c76cc79c5d8f9824a8aa4b56d4d.png" title=" Auto enters 'dung' into FirstInput" width="1920"/>
+                <img src="0d500d3aa6abe0f4f119e941c734088ba18e21b24f98b63b52bdc96bfedfec25.png" title=" Auto enters 'ha' into LastName" width="1920"/>
+                <img src="3568355a19984d4df0cd66574ef94fe2aa8b7f0a415d2a46aae115083e1b7fb1.png" title=" Auto enters '236 khuong dinh' into AddressInput" width="1920"/>
+                <img src="756b9d500d1b3490ccdf194538660cb169a9a94d89a948d81c399a5b4291e00f.png" title=" Auto selects #value in ProvinceInput" width="1920"/>
+                <img src="72691f665eb5063c5008e769c2e293e8bd54766b0ec37028270de638d3af483a.png" title=" Auto selects #value in DistrictInput" width="1920"/>
+                <img src="74029b229e6c16de2510688f8e1549a4ebbd77951188a7dfa5bf1cd90c4a41a1.png" title=" Auto enters '0835678910' into PhoneNumberInput" width="1920"/>
+                <img src="1f6239f0e30e7fe29a9241af40c83a4043481f1aec96a9cb254356de5c640fff.png" title=" Auto clicks on ContinueButton" width="1920"/>
+                <img src="d084af8a46f1734995cefcf12fa59184eb906f4c8a8d351c3a6c840ca7374db7.png" title=" Auto enters 'havietdung10@gmail.com' into EmailInput: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 
